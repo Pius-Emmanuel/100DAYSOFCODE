@@ -1,3 +1,6 @@
-# This is a log for my 100 days of coding in python
-
-# This is me testing my development branch
+# Day 1 consist of the following
+# Hello World
+# debugging exercise
+# input function exercise
+# variable exercise
+# Day 1 project which is the band generator
