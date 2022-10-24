@@ -1,1 +1,0 @@
-# This is a log for my 100 days of coding in python
