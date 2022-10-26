@@ -1,3 +1,5 @@
-# This is a log for my 100 days of coding in python
-
-# This is me testing my development branch
+# Day 2 consist of the following
+# Data types
+# BMI calculator
+# Life in weeks
+# Day 2 project which is a tip calculator
