@@ -1,3 +1,4 @@
-# This is a log for my 100 days of coding in python
-
-# This is me testing my development branch
+# Day 4 consist of the following
+# Heads or Tails
+# Banker Roulette
+# Treasure Map
