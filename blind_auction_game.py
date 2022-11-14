@@ -1,9 +1,12 @@
+"""
+Secret auction
+"""
 from  os import system
 from blind_auction_game_ASCII import LOGO
 print(LOGO)
 
 bids = {}
-bidding_finished = False
+BIDDING_FINISHED = False
 
 def find_highest_bidder(bidding_record):
     """_summary_
@@ -21,13 +24,13 @@ def find_highest_bidder(bidding_record):
             winner = bidder
     print(f"The winner is {winner} with a bid of ${highest_bid}")
 
-while not bidding_finished:
+while not BIDDING_FINISHED:
     name = input("What is your name?: ")
     price = int(input("What is your bid?: $"))
     bids[name] = price
     should_continue = input("Are there any other bidders? Type 'yes or 'no'.\n")
     if should_continue == "no":
-        bidding_finished = True
+        BIDDING_FINISHED = True
         find_highest_bidder(bids)
     elif should_continue == "yes":
-        clear()
+        system('clear')
