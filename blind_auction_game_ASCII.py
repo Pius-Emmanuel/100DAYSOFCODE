@@ -1,6 +1,8 @@
 """blind auction game ascii
 """
-logo = '''
+
+
+LOGO = '''
                          ___________
                          \         /
                           )_______(
