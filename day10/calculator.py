@@ -1,5 +1,6 @@
 """calculator
 """
+from art import LOGO
 def add(n_1, n_2):
     """Adds two numbers"""
     return n_1 + n_2
@@ -22,17 +23,27 @@ operations = {
     "*": multiply,
     "/":divide
     }
-num_1 = int(input("What's the first number?: "))
+def calculator():
+    """ runs calculations with the user input"""
+    print(LOGO)
 
-for char in operations:
-    print(char)
+    num_1 = float(input("What's the first number?: "))
 
-OPERATION_SYMBOL = input("Pick an operation from the line above: ")
+    for char in operations:
+        print(char)
+    should_continue = True
+    #we chose the symbol to calculate with
+    while should_continue:
+        operation_symbol = input("Pick an operation: ")
+        num_2 = float(input("What's the next number?: "))
+        calculation_function = operations[operation_symbol]
+        answer = calculation_function(num_1, num_2)
 
-num_2 = int(input("What's the second number?: "))
+        print(f"{num_1} {operation_symbol} {num_2} = {answer}")
 
-calculation_function = operations[OPERATION_SYMBOL]
-calculation_function(num_1, num_2)
-answer = calculation_function(num_1, num_2)
-
-print(f"{num_1} {OPERATION_SYMBOL} {num_2} = {answer}")
+        if input(f"Type 'y' to continue calculating with {answer}, or type 'n' to start a new calculation: ") == 'y':
+            num_1 = answer
+        else:
+            should_continue = False
+            calculator()
+calculator()
