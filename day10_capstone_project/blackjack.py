@@ -78,3 +78,20 @@ def play_game():
 while input("Do you want to play a game of Blackjack? Type 'y' or 'n': ") == "y":
     os.system('cls')
     play_game()
+
+"""
+This is a program that simulates the card game Blackjack. The program uses the deal_card() function to randomly 
+choose a card from a deck of cards and add it to the player's hand or the computer's hand. The calculate_score() 
+function takes a list of cards and calculates the score for that hand, taking into account the fact that an Ace can
+be worth either 1 or 11 points. The compare() function compares the scores of the player and the computer, and returns
+a string indicating who won the game.
+
+The play_game() function is the main function that controls the flow of the game. It starts by dealing two cards each
+to the player and the computer, and then it enters a loop where it asks the player if they want to hit (take another card)
+or stand (keep their current hand). The loop continues until either the player or the computer has a score
+of 21 (a Blackjack) or the player's score goes over 21 (busts).
+
+After the player has finished their turn, the computer takes its turn, drawing additional cards until its score is 17
+or higher. Once the computer has finished its turn, the final scores are displayed and the winner is announced.
+The program then asks the player if they want to play again, and if so, the game starts over.
+"""
