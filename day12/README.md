@@ -1,2 +1,2 @@
 # 100DAYSOFCODE
-* This is the development branch for an extra layer build
+* Project is the number guessing game
