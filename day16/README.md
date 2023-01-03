@@ -1,4 +1,4 @@
-# Day15 consists of the following
+# Day16 consists of the following
 
-* A digital coffee machine project
-
+* Updated the digital coffee machine project from functionl 
+programing to object oriented programming
