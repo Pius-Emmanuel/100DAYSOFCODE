@@ -14,3 +14,9 @@ def shape(num_of_sides):
 for sides in range(3, 11):
     yu.color(random.choice(colours))
     shape(sides)        
+
+
+
+
+screen = t.Screen()
+screen.exitonclick()
