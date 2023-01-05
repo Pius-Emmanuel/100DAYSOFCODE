@@ -1,61 +1,27 @@
-﻿import turtle
+﻿import turtle as t
+import random
 
 
-turtle.speed('slow')
-#turtle.penup()
-turtle.goto(-100, 0)
+spiro = t.Turtle()
+t.colormode(255)
+
+def random_color():
+    r = random.randint(0, 255)
+    g = random.randint(0, 255)
+    b = random.randint(0, 255)
+    color =(r, g, b)
+    return color
 
 
-# Create a triangle
-for i in range(3):
-    turtle.forward(100)
-    turtle.left(120)
-    turtle.color("brown")
+spiro.speed("fastest")
 
-# Create a square
-for i in range(4):
-    turtle.forward(100)
-    turtle.left(90)
-    turtle.color("blue")
+def draw_spirograph(size_of_gap):
+    for _ in range(int(360 / size_of_gap)):
+        spiro.color(random_color())
+        spiro.circle(100)
+        spiro.setheading(spiro.heading() + 10)
 
+draw_spirograph(5)
 
-# Create a pentagon
-for i in range(5):
-    turtle.forward(100)
-    turtle.left(72)
-    turtle.color("red")
-
-# Create a hexagon
-for i in range(6):
-    turtle.forward(100)
-    turtle.left(60)
-    turtle.color("black")
-
-# Create a heptagon
-turtle.pendown()
-for i in range(7):
-    turtle.forward(100)
-    turtle.left(51.4285714285714)
-    turtle.color("tomato")
-
-# Create an octagon
-for i in range(8):
-    turtle.forward(100)
-    turtle.left(45)
-    turtle.color("dark cyan")
-
-# Create a nonagon
-for i in range(9):
-    turtle.forward(100)
-    turtle.left(40)
-    turtle.color("navy")
-
-# Create a decagon
-for i in range(10):
-    turtle.forward(100)
-    turtle.left(36)
-    turtle.color("deep pink")
-
-# Prevent the window from closing
-turtle.exitonclick()
-"deep pink","navy","dark cyan","tomato","black","red","blue","brown"
+screen = t.Screen()
+screen.exitonclick()
