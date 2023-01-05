@@ -26,5 +26,4 @@ for _ in range(200):
 
 
 
-screen = t.Screen()
-screen.exitonclick()
+turtle.exitonclick()
