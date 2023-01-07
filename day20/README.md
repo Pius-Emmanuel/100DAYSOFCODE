@@ -1,4 +1,3 @@
-# Day19 consists of the following
+# Day20 consists of the following
 
-* Etch a sketch app
-* Turtle race betting app
+* The snake game part 1
