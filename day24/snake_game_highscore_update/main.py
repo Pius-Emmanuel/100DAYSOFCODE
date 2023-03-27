@@ -1,5 +1,5 @@
 from turtle import Screen
-from snake import Snake
+from day24.snake_game_highscore_update.snake import Snake
 from food import Food
 from scoreboard import Scoreboard
 import time
