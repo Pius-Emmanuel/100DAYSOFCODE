@@ -1,11 +1,11 @@
-# with open("./weather_data.csv") as weather_data:
-#     data = weather_data.readlines()
+# with open("./initial test.csv") as initial test:
+#     data = initial test.readlines()
 #     print(data)
 #
 
 # import csv
 #
-# with open("weather_data.csv") as data_file:
+# with open("initial test.csv") as data_file:
 #     data = csv.reader(data_file)
 #     temperatures = []
 #     for col in data:
@@ -16,7 +16,7 @@
 
 import pandas as pd
 
-# data = pd.read_csv("weather_data.csv")
+# data = pd.read_csv("initial test.csv")
 # print(type(data))
 # print(data["temp"])
 
