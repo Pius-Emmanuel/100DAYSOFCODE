@@ -43,10 +43,10 @@ import pandas as pd
 # print(monday.condition)
 #
 #
-# monday = data[data.temp == "Monday"]
-# monday_temp = int(monday.temp)
-# monday_temp_f = monday_temp * 9/5 +32
-# print(monday_temp_f)
+monday = data[data.temp == "Monday"]
+monday_temp = int(monday.temp)
+monday_temp_f = monday_temp * 9/5 +32
+print(monday_temp_f)
 
 
 
